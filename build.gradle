@@ -6,7 +6,11 @@ plugins {
 }
 
 group = 'com.dairy.app'
-version = '0.0.1-SNAPSHOT'
+
+bootWar {
+    archiveBaseName = 'DairyApp'
+    version =  ''
+}
 
 java {
 	toolchain {

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.dairy.app.DairyHubApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-12-02T08:38:06" hostname="LAPTOP-K150I56C" time="0.582">
+<testsuite name="com.dairy.app.DairyHubApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-12-23T13:02:55" hostname="LAPTOP-K150I56C" time="0.738">
   <properties/>
-  <testcase name="contextLoads()" classname="com.dairy.app.DairyHubApplicationTests" time="0.582"/>
+  <testcase name="contextLoads()" classname="com.dairy.app.DairyHubApplicationTests" time="0.738"/>
   <system-out><![CDATA[Standard Commons Logging discovery in action with spring-jcl: please remove commons-logging.jar from classpath in order to avoid potential conflicts
-14:08:00.651 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.dairy.app.DairyHubApplicationTests]: DairyHubApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-14:08:00.801 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.dairy.app.DairyHubApplication for test class com.dairy.app.DairyHubApplicationTests
+18:32:47.982 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.dairy.app.DairyHubApplicationTests]: DairyHubApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+18:32:48.139 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.dairy.app.DairyHubApplication for test class com.dairy.app.DairyHubApplicationTests
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -15,7 +15,7 @@
 
  :: Spring Boot ::                (v3.3.5)
 
-2024-12-02T14:08:01.314+05:30  WARN 24508 --- [DairyHub] [    Test worker] ory$DuplicateJsonObjectContextCustomizer : 
+2024-12-23T18:32:48.696+05:30  WARN 19384 --- [DairyHub] [    Test worker] ory$DuplicateJsonObjectContextCustomizer : 
 
 Found multiple occurrences of org.json.JSONObject on the class path:
 
@@ -24,22 +24,23 @@ Found multiple occurrences of org.json.JSONObject on the class path:
 
 You may wish to exclude one of them to ensure predictable runtime behavior
 
-2024-12-02T14:08:01.328+05:30  INFO 24508 --- [DairyHub] [    Test worker] com.dairy.app.DairyHubApplicationTests   : Starting DairyHubApplicationTests using Java 17.0.2 with PID 24508 (started by anupm in D:\Sachin\DigitalTrust\DairyHub\DairyHub)
-2024-12-02T14:08:01.329+05:30  INFO 24508 --- [DairyHub] [    Test worker] com.dairy.app.DairyHubApplicationTests   : No active profile set, falling back to 1 default profile: "default"
-2024-12-02T14:08:02.361+05:30  INFO 24508 --- [DairyHub] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-12-02T14:08:02.433+05:30  INFO 24508 --- [DairyHub] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 62 ms. Found 1 JPA repository interface.
-2024-12-02T14:08:03.101+05:30  INFO 24508 --- [DairyHub] [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-12-02T14:08:03.262+05:30  INFO 24508 --- [DairyHub] [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
-2024-12-02T14:08:03.307+05:30  INFO 24508 --- [DairyHub] [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2024-12-02T14:08:03.670+05:30  INFO 24508 --- [DairyHub] [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-12-02T14:08:03.714+05:30  INFO 24508 --- [DairyHub] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-12-02T14:08:04.283+05:30  INFO 24508 --- [DairyHub] [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4c2bea52
-2024-12-02T14:08:04.286+05:30  INFO 24508 --- [DairyHub] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-12-02T14:08:04.361+05:30  WARN 24508 --- [DairyHub] [    Test worker] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2024-12-02T14:08:05.417+05:30  INFO 24508 --- [DairyHub] [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-12-02T14:08:05.649+05:30  INFO 24508 --- [DairyHub] [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-12-02T14:08:06.350+05:30  WARN 24508 --- [DairyHub] [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-12-02T14:08:06.791+05:30  INFO 24508 --- [DairyHub] [    Test worker] com.dairy.app.DairyHubApplicationTests   : Started DairyHubApplicationTests in 5.743 seconds (process running for 7.732)
+2024-12-23T18:32:48.710+05:30  INFO 19384 --- [DairyHub] [    Test worker] com.dairy.app.DairyHubApplicationTests   : Starting DairyHubApplicationTests using Java 17.0.2 with PID 19384 (started by anupm in D:\Sachin\DigitalTrust\DairyHub\DairyHub)
+2024-12-23T18:32:48.712+05:30  INFO 19384 --- [DairyHub] [    Test worker] com.dairy.app.DairyHubApplicationTests   : No active profile set, falling back to 1 default profile: "default"
+2024-12-23T18:32:50.080+05:30  INFO 19384 --- [DairyHub] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-23T18:32:50.171+05:30  INFO 19384 --- [DairyHub] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 79 ms. Found 1 JPA repository interface.
+2024-12-23T18:32:50.873+05:30  INFO 19384 --- [DairyHub] [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-23T18:32:50.954+05:30  INFO 19384 --- [DairyHub] [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-12-23T18:32:51.003+05:30  INFO 19384 --- [DairyHub] [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-12-23T18:32:51.562+05:30  INFO 19384 --- [DairyHub] [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-23T18:32:51.616+05:30  INFO 19384 --- [DairyHub] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-12-23T18:32:52.072+05:30  INFO 19384 --- [DairyHub] [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5a78b52b
+2024-12-23T18:32:52.077+05:30  INFO 19384 --- [DairyHub] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-12-23T18:32:52.271+05:30  WARN 19384 --- [DairyHub] [    Test worker] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-12-23T18:32:53.784+05:30  INFO 19384 --- [DairyHub] [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-23T18:32:54.124+05:30  INFO 19384 --- [DairyHub] [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-23T18:32:54.939+05:30  WARN 19384 --- [DairyHub] [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-23T18:32:54.970+05:30  INFO 19384 --- [DairyHub] [    Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2024-12-23T18:32:55.556+05:30  INFO 19384 --- [DairyHub] [    Test worker] com.dairy.app.DairyHubApplicationTests   : Started DairyHubApplicationTests in 7.15 seconds (process running for 8.793)
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
